@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply flex flex-col font-noto font-light min-h-[100vh];
+}
+
+.app {
+  @apply h-full w-full max-w-[1280px] mx-auto pt-16 relative max-sm:pt-12;
+}
+
+.wrapper {
+  @apply h-full w-full max-w-[980px] px-2.5 mx-auto;
+}
+
+.btn_rounded {
+  @apply text-primary-300 bg-light px-5 rounded-full hover:bg-primary-300 hover:text-light transition duration-300;
+}
+
+.btn_rounded_active {
+  @apply px-5 rounded-full bg-primary-300 text-light;
+}
+
+.scrollbar_primary::-webkit-scrollbar {
+  @apply w-[6px];
+}
+.scrollbar_primary::-webkit-scrollbar-track {
+  @apply bg-dark-400 rounded-full;
+}
+.scrollbar_primary::-webkit-scrollbar-thumb {
+  @apply bg-primary-300 rounded-full;
+}
+
+.h-full-section {
+  @apply h-[calc(100vh-200px)] max-md:h-[calc(100vh-340px)];
+}

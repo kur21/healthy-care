@@ -1,0 +1,28 @@
+/* layout style */
+.header {
+  @apply fixed top-0 left-0 w-full shadow-lg bg-dark-500 text-light z-10;
+}
+
+.footer {
+  @apply bg-dark-500 text-light z-10 py-14 w-full mt-auto max-md:py-7;
+}
+
+.navigation {
+  @apply flex items-center gap-6 max-md:gap-4;
+}
+
+.navigation_link {
+  @apply flex gap-2 items-center hover:text-primary-400;
+}
+
+.navigation_link_active {
+  @apply flex gap-2 items-center text-primary-400;
+}
+
+.menu_dropdown {
+  @apply absolute bg-dark-400 right-0 top-full w-full min-w-[280px] flex flex-col max-sm:min-w-[200px] z-20;
+}
+
+.menu_dropdown_link {
+  @apply text-lg py-6 pl-8 border-t border-t-light/[.15] border-b border-b-dark-600/[.25] max-sm:pl-4 max-sm:py-3 max-sm:text-base hover:text-primary-400;
+}
